@@ -247,9 +247,13 @@ html[data-motion="off"] .hair { width: 56px; transition: none; }
 
 .hdr__logo { justify-self: center; grid-column: 2; }
 .hdr__logo img {
-  height: 30px; width: auto;
+  height: 24px;            /* NAV LOGO — mobile height. Change this value to resize on phones. */
+  width: auto;
   filter: brightness(0) invert(1);
   transition: filter .5s var(--ease);
+}
+@media (min-width: 700px) {
+  .hdr__logo img { height: 28px; }  /* NAV LOGO — desktop/tablet height. Change this to resize on larger screens. */
 }
 
 .hdr__buy {
@@ -496,7 +500,8 @@ html[data-motion="off"] .navdrop__caret { transition: none; }
 .ftr { background: var(--deep); color: var(--on-night-muted); padding-block: clamp(64px, 8vw, 110px) 0; }
 .ftr__top { display: grid; gap: 48px; }
 @media (min-width: 900px) { .ftr__top { grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 56px; } }
-.ftr__logo { height: 24px; width: auto; filter: brightness(0) invert(1); opacity: .9; margin-bottom: 22px; }
+.ftr__logo { height: 26px; width: auto; filter: brightness(0) invert(1); opacity: .9; margin-bottom: 22px; } /* FOOTER LOGO — mobile height. Change to resize on phones. */
+@media (min-width: 700px) { .ftr__logo { height: 28px; } } /* FOOTER LOGO — desktop height. Change to resize on larger screens. */
 .ftr__brand p { font-size: var(--fs-small); max-width: 28em; }
 .ftr__region { margin-top: 22px; font-size: var(--fs-small); font-variant-numeric: lining-nums; letter-spacing: .04em; color: var(--on-night); }
 .ftr h4 { font-size: var(--fs-label); letter-spacing: .24em; text-transform: uppercase; color: var(--on-night); font-weight: 500; margin-bottom: 18px; }
