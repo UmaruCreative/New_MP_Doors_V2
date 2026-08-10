@@ -247,13 +247,13 @@ html[data-motion="off"] .hair { width: 56px; transition: none; }
 
 .hdr__logo { justify-self: center; grid-column: 2; }
 .hdr__logo img {
-  height: 24px;            /* NAV LOGO — mobile height. Change this value to resize on phones. */
+  height: 18px;            /* NAV LOGO — mobile height. Change this value to resize on phones. */
   width: auto;
   filter: brightness(0) invert(1);
   transition: filter .5s var(--ease);
 }
 @media (min-width: 700px) {
-  .hdr__logo img { height: 28px; }  /* NAV LOGO — desktop/tablet height. Change this to resize on larger screens. */
+  .hdr__logo img { height: 20px; }  /* NAV LOGO — desktop/tablet height. Change this to resize on larger screens. */
 }
 
 .hdr__buy {
